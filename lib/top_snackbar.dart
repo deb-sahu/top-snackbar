@@ -3,9 +3,40 @@ library top_snackbar;
 import 'package:flutter/material.dart';
 import 'package:top_snackbar/styles.dart';
 
-/// The class that contains the custom top snackbar.
+/// The class that contains the custom top snackbar widget and predefined snackbar types.
 class CustomTopSnackbar {
-  /// Shows a custom snackbar at the top of the screen. The snackbar requires a [BuildContext] and a [String] message. The [leadingIcon] parameter is optional and defaults to null. The [duration] parameter is optional and defaults to 3 seconds. The [backgroundColor] parameter is optional and defaults to a blue color. The [borderColor] parameter is optional and defaults to a lighter blue color. The [shadowColor] parameter is optional and defaults to black. The [iconColor] parameter is optional and defaults to white. The [textColor] parameter is optional and defaults to white. The [heightFactor] parameter is optional and defaults to 0.075. The [textSizeFactor] parameter is optional and defaults to 0.035. The [iconSizeFactor] parameter is optional and defaults to 0.025. The [borderRadius] parameter is optional and defaults to 8. The [topPadding] parameter is optional and defaults to 100. The [leftPadding] parameter is optional and defaults to 0. The [rightPadding] parameter is optional and defaults to 0.
+  /// Shows a custom snackbar at the top of the screen.
+  ///
+  /// **Required**
+  /// - [BuildContext] context
+  /// - [String] message
+  ///
+  /// **Optional**
+  /// - [IconData] leadingIcon (default: null)
+  /// - [Duration] duration (default: 3 seconds)
+  /// - [Color] backgroundColor (default: 0xFF1273eb) i.e. blue color
+  /// - [Color] borderColor (default: 0xFF3860be) i.e. blue color
+  /// - [Color] shadowColor (default: black)
+  /// - [Color] iconColor (default: white)
+  /// - [Color] textColor (default: white)
+  /// - [double] heightFactor (default: 0.075) i.e. 7.5% of screen height, uses [MediaQuery] to adjust height
+  /// - [double] textSizeFactor (default: 0.035) i.e. 3.5% of screen width, uses [MediaQuery] to adjust text size
+  /// - [double] iconSizeFactor (default: 0.025) i.e. 2.5% of screen width, uses [MediaQuery] to adjust icon size
+  /// - [double] borderRadius (default: 8)
+  /// - [double] topPadding (default: 100)
+  /// - [double] leftPadding (default: 0)
+  /// - [double] rightPadding (default: 0)
+  ///
+  /// **Example:**
+  /// ```dart
+  /// CustomTopSnackbar.show(
+  ///  context,
+  /// 'This is a custom snackbar',
+  /// leadingIcon: Icons.info_outline,
+  /// duration: Duration(seconds: 5),
+  /// // Add more optional parameters as needed
+  /// );
+  /// ```
   static void show(
     BuildContext context,
     String message, {
@@ -80,7 +111,24 @@ class CustomTopSnackbar {
     });
   }
 
-  /// Shows an info snackbar at the top of the screen. The snackbar requires a [BuildContext] and a [String] message. The [duration] parameter is optional and defaults to 3 seconds.
+  /// Shows an info snackbar at the top of the screen.
+  ///
+  /// **Required**
+  /// - [BuildContext] context
+  /// - [String] message
+  ///
+  /// **Optional**
+  /// - [Duration] duration (default: 3 seconds)
+  /// - Here, the info snackbar has a blue background color and info icon.
+  ///
+  /// **Example:**
+  /// ```dart
+  /// CustomTopSnackbar.showInfo(
+  /// context,
+  /// 'This is an info snackbar',
+  /// duration: Duration(seconds: 5),
+  /// );
+  /// ```
   static void showInfo(BuildContext context, String message,
       {Duration duration = const Duration(seconds: 3)}) {
     CustomTopSnackbar.show(
@@ -93,7 +141,23 @@ class CustomTopSnackbar {
     );
   }
 
-  /// Shows a success snackbar at the top of the screen. The snackbar requires a [BuildContext] and a [String] message. The [duration] parameter is optional and defaults to 3 seconds.
+  /// Shows a success snackbar at the top of the screen.
+  ///
+  /// **Required**
+  /// - [BuildContext] context
+  /// - [String] message
+  ///
+  /// **Optional**
+  /// - [Duration] duration (default: 3 seconds)
+  /// - Here, the success snackbar has a green background color and success icon.
+  ///
+  /// **Example:**
+  /// ```dart
+  /// CustomTopSnackbar.showSuccess(
+  /// context,
+  /// 'This is a success snackbar',
+  /// duration: Duration(seconds: 5),
+  /// ```
   static void showSuccess(BuildContext context, String message,
       {Duration duration = const Duration(seconds: 3)}) {
     CustomTopSnackbar.show(
@@ -106,7 +170,24 @@ class CustomTopSnackbar {
     );
   }
 
-  /// Shows an error snackbar at the top of the screen. The snackbar requires a [BuildContext] and a [String] message. The [duration] parameter is optional and defaults to 3 seconds.
+  /// Shows an error snackbar at the top of the screen.
+  ///
+  /// **Required**
+  /// - [BuildContext] context
+  /// - [String] message
+  ///
+  /// **Optional**
+  /// - [Duration] duration (default: 3 seconds)
+  /// - Here, the error snackbar has a red background color and error icon.
+  ///
+  /// **Example:**
+  /// ```dart
+  /// CustomTopSnackbar.showError(
+  /// context,
+  /// 'This is an error snackbar',
+  /// duration: Duration(seconds: 5),
+  /// );
+  /// ```
   static void showError(BuildContext context, String message,
       {Duration duration = const Duration(seconds: 3)}) {
     CustomTopSnackbar.show(
@@ -119,7 +200,24 @@ class CustomTopSnackbar {
     );
   }
 
-  /// Shows a warning snackbar at the top of the screen. The snackbar requires a [BuildContext] and a [String] message. The [duration] parameter is optional and defaults to 3 seconds.
+  /// Shows a warning snackbar at the top of the screen.
+  ///
+  /// **Required**
+  /// - [BuildContext] context
+  /// - [String] message
+  ///
+  /// **Optional**
+  /// - [Duration] duration (default: 3 seconds)
+  /// - Here, the warning snackbar has a yellow background color and warning icon.
+  ///
+  /// **Example:**
+  /// ```dart
+  /// CustomTopSnackbar.showWarning(
+  /// context,
+  /// 'This is a warning snackbar',
+  /// duration: Duration(seconds: 5),
+  /// );
+  /// ```
   static void showWarning(BuildContext context, String message,
       {Duration duration = const Duration(seconds: 3)}) {
     CustomTopSnackbar.show(
