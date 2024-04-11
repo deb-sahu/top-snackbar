@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
+/// The class that contains the custom styles for the app.
 class Styles {
-    static TextStyle customText(
+  /// The custom text style for the app.
+  static TextStyle customText(
     BuildContext context, {
     Color? color,
     double? sizeFactor, // MediaQuery size factor
