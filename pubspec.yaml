@@ -1,7 +1,7 @@
 name: top_snackbar
 description: A custom top snackbar widget for Flutter
 version: 0.0.1
-homepage:
+homepage: https://github.com/deb-sahu/top-snackbar
 
 environment:
   sdk: '>=3.3.3 <4.0.0'
