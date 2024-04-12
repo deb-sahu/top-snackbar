@@ -7,17 +7,17 @@
 
 ## Screenshots
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+<div style="display: flex; justify-content: space-between;">
     <img src="https://github.com/deb-sahu/top-snackbar/assets/117360930/2bce52a7-0e86-4428-aeac-ae07b0c3c923" alt="Screenshot_1712918019" width="200"/>
     <img src="https://github.com/deb-sahu/top-snackbar/assets/117360930/90823268-5fe2-4a51-81a0-6ab5d1146e44" alt="Screenshot_1712918023" width="200"/>
 </div>
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+<div style="display: flex; justify-content: space-between;">
     <img src="https://github.com/deb-sahu/top-snackbar/assets/117360930/256c18f3-b03a-463a-ac81-44945c600adb" alt="Screenshot_1712918027" width="200"/>
     <img src="https://github.com/deb-sahu/top-snackbar/assets/117360930/fc2da41e-760e-488c-be4d-61496cd0fa44" alt="Screenshot_1712918031" width="200"/>
 </div>
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+<div style="display: flex; justify-content: space-between;">
     <img src="https://github.com/deb-sahu/top-snackbar/assets/117360930/e0e65f7e-e8fc-4a15-ba99-b927ea27448a" alt="Screenshot_1712918034" width="200"/>
 </div>
 
