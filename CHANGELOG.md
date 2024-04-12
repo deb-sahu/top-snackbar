@@ -1,3 +1,7 @@
+## 0.0.4
+* Updated README with screenshots
+* Added fontWeight and fontFamily props
+
 ## 0.0.3
 * Bug Fixes
 * Modified Documentation

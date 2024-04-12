@@ -19,6 +19,8 @@ class CustomTopSnackbar {
   /// - [Color] shadowColor (default: black)
   /// - [Color] iconColor (default: white)
   /// - [Color] textColor (default: white)
+  /// - [FontWeight] fontWeight (default: FontWeight.w600)
+  /// - [String] fontFamily (default: null) i.e. Make sure to add the font in the pubspec.yaml file before using it
   /// - [double] heightFactor (default: 0.075) i.e. 7.5% of screen height, uses [MediaQuery] to adjust height
   /// - [double] textSizeFactor (default: 0.035) i.e. 3.5% of screen width, uses [MediaQuery] to adjust text size
   /// - [double] iconSizeFactor (default: 0.025) i.e. 2.5% of screen width, uses [MediaQuery] to adjust icon size
@@ -47,6 +49,8 @@ class CustomTopSnackbar {
     Color shadowColor = Colors.black,
     Color iconColor = Colors.white,
     Color textColor = Colors.white,
+    FontWeight fontWeight = FontWeight.w600,
+    String? fontFamily,
     double heightFactor = 0.075,
     double textSizeFactor = 0.035,
     double iconSizeFactor = 0.025,
@@ -94,7 +98,10 @@ class CustomTopSnackbar {
                   child: Text(
                     message,
                     style: Styles.customText(context,
-                        color: textColor, sizeFactor: textSizeFactor),
+                        color: textColor,
+                        sizeFactor: textSizeFactor,
+                        weight: fontWeight,
+                        family: fontFamily),
                   ),
                 ),
               ],
@@ -223,8 +230,8 @@ class CustomTopSnackbar {
     CustomTopSnackbar.show(
       context,
       message,
-      backgroundColor: Colors.yellow,
-      borderColor: Colors.yellowAccent,
+      backgroundColor: Colors.amber,
+      borderColor: Colors.amberAccent,
       leadingIcon: Icons.warning_amber_outlined,
       duration: duration,
     );

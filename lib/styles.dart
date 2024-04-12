@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// The class that contains the custom styles for the app.
+/// The class that contains the custom styles for the package.
 class Styles {
   /// The custom text style for the app.
   /// Uses the [MediaQuery] size factor to adjust the text size.

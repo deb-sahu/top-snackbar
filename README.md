@@ -13,7 +13,7 @@ Add `top_snackbar` to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  top_snackbar: ^0.0.3 # Use the latest version
+  top_snackbar: ^0.0.4 # Use the latest version
 ```
 
 ### Import

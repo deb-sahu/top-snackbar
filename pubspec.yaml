@@ -1,6 +1,6 @@
 name: top_snackbar
-description: A lightweight and easy-to-use Flutter library tailored for top snackbar notifications. Customize styles, colors, icons and more with the ease.
-version: 0.0.3
+description: A lightweight and easy-to-use flutter library tailored for top snackbar notifications. Customize styles, colors, icons and more with the ease.
+version: 0.0.4
 homepage: https://github.com/deb-sahu/top-snackbar
 
 environment:

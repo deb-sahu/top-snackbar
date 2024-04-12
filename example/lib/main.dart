@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:top_snackbar/top_snackbar.dart';
 
@@ -44,7 +45,7 @@ class ExamplePage extends StatelessWidget {
               onPressed: () {
                 CustomTopSnackbar.show(context,
                     'This is an example of a custom snackbar with an icon',
-                    leadingIcon: Icons.abc,
+                    leadingIcon: CupertinoIcons.checkmark_alt_circle_fill,
                     backgroundColor: Colors.blue,
                     borderColor: Colors.blueAccent);
               },
