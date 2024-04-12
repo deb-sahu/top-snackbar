@@ -14,12 +14,18 @@
   <div style="flex: 50%; padding: 5px;">
     <img src="https://github.com/deb-sahu/top-snackbar/assets/117360930/90823268-5fe2-4a51-81a0-6ab5d1146e44" alt="Screenshot_1712918023" width="200"/>
   </div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap;">
   <div style="flex: 50%; padding: 5px;">
     <img src="https://github.com/deb-sahu/top-snackbar/assets/117360930/256c18f3-b03a-463a-ac81-44945c600adb" alt="Screenshot_1712918027" width="200"/>
   </div>
   <div style="flex: 50%; padding: 5px;">
     <img src="https://github.com/deb-sahu/top-snackbar/assets/117360930/fc2da41e-760e-488c-be4d-61496cd0fa44" alt="Screenshot_1712918031" width="200"/>
   </div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap;">
   <div style="flex: 50%; padding: 5px;">
     <img src="https://github.com/deb-sahu/top-snackbar/assets/117360930/e0e65f7e-e8fc-4a15-ba99-b927ea27448a" alt="Screenshot_1712918034" width="200"/>
   </div>
