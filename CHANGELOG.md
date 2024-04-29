@@ -1,3 +1,7 @@
+## 0.0.5
+* Modified snackbar styles
+* Added demo gif 
+
 ## 0.0.4
 * Updated README with screenshots
 * Added fontWeight and fontFamily props
