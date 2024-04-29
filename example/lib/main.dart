@@ -33,7 +33,9 @@ class ExamplePage extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+            // Custom snackbar with only text
             ElevatedButton(
               onPressed: () {
                 CustomTopSnackbar.show(
@@ -41,16 +43,18 @@ class ExamplePage extends StatelessWidget {
               },
               child: const Text("Custom Snackbar"),
             ),
+
+            // Custom snackbar with icon and text
             ElevatedButton(
               onPressed: () {
                 CustomTopSnackbar.show(context,
                     'This is an example of a custom snackbar with an icon',
-                    leadingIcon: CupertinoIcons.checkmark_alt_circle_fill,
-                    backgroundColor: Colors.blue,
-                    borderColor: Colors.blueAccent);
+                    leadingIcon: CupertinoIcons.checkmark_alt_circle_fill);
               },
               child: const Text("Custom Snackbar with Icon"),
             ),
+
+            // Custom snackbar with info style
             ElevatedButton(
               onPressed: () {
                 CustomTopSnackbar.showInfo(
@@ -58,6 +62,8 @@ class ExamplePage extends StatelessWidget {
               },
               child: const Text("Info Snackbar"),
             ),
+
+            // Custom snackbar with success style
             ElevatedButton(
               onPressed: () {
                 CustomTopSnackbar.showSuccess(
@@ -65,12 +71,23 @@ class ExamplePage extends StatelessWidget {
               },
               child: const Text("Success Snackbar"),
             ),
+
+            // Custom snackbar with warning style
             ElevatedButton(
               onPressed: () {
                 CustomTopSnackbar.showWarning(
                     context, 'This is an example of a warning snackbar');
               },
               child: const Text("Warning Snackbar"),
+            ),
+
+            // Custom snackbar with error style
+            ElevatedButton(
+              onPressed: () {
+                CustomTopSnackbar.showError(
+                    context, 'This is an example of an error snackbar');
+              },
+              child: const Text("Error Snackbar"),
             ),
           ],
         ),

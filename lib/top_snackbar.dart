@@ -14,9 +14,9 @@ class CustomTopSnackbar {
   /// **Optional**
   /// - [IconData] leadingIcon (default: null)
   /// - [Duration] duration (default: 3 seconds)
-  /// - [Color] backgroundColor (default: 0xFF1273eb) i.e. blue color
-  /// - [Color] borderColor (default: 0xFF3860be) i.e. blue color
-  /// - [Color] shadowColor (default: black)
+  /// - [Color] backgroundColor (default: blue)
+  /// - [Color] borderColor (default: blue)
+  /// - [Color] shadowColor (default: blue)
   /// - [Color] iconColor (default: white)
   /// - [Color] textColor (default: white)
   /// - [FontWeight] fontWeight (default: FontWeight.w600)
@@ -44,9 +44,9 @@ class CustomTopSnackbar {
     String message, {
     IconData? leadingIcon,
     Duration duration = const Duration(seconds: 3),
-    Color backgroundColor = const Color(0xFF1273eb),
-    Color borderColor = const Color(0xFF3860be),
-    Color shadowColor = Colors.black,
+    Color backgroundColor = Colors.blue,
+    Color borderColor = Colors.blue,
+    Color shadowColor = Colors.blue,
     Color iconColor = Colors.white,
     Color textColor = Colors.white,
     FontWeight fontWeight = FontWeight.w600,
@@ -79,8 +79,8 @@ class CustomTopSnackbar {
               boxShadow: [
                 BoxShadow(
                   color: shadowColor.withOpacity(0.5),
-                  blurRadius: 0.5,
-                  spreadRadius: 0.5,
+                  blurRadius: 0.1,
+                  spreadRadius: 0.1,
                 ),
               ],
             ),
@@ -142,7 +142,8 @@ class CustomTopSnackbar {
       context,
       message,
       backgroundColor: Colors.blue,
-      borderColor: Colors.blueAccent,
+      borderColor: Colors.blue,
+      shadowColor: Colors.blue,
       leadingIcon: Icons.info_outline,
       duration: duration,
     );
@@ -171,7 +172,8 @@ class CustomTopSnackbar {
       context,
       message,
       backgroundColor: Colors.green,
-      borderColor: Colors.greenAccent,
+      borderColor: Colors.green,
+      shadowColor: Colors.green,
       leadingIcon: Icons.check_circle_outline,
       duration: duration,
     );
@@ -201,7 +203,8 @@ class CustomTopSnackbar {
       context,
       message,
       backgroundColor: Colors.red,
-      borderColor: Colors.redAccent,
+      borderColor: Colors.red,
+      shadowColor: Colors.red,
       leadingIcon: Icons.error_outline,
       duration: duration,
     );
@@ -231,7 +234,8 @@ class CustomTopSnackbar {
       context,
       message,
       backgroundColor: Colors.amber,
-      borderColor: Colors.amberAccent,
+      borderColor: Colors.amber,
+      shadowColor: Colors.amber,
       leadingIcon: Icons.warning_amber_outlined,
       duration: duration,
     );
