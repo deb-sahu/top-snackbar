@@ -7,9 +7,7 @@
 
 ## Demo
 
-
-![Screen Recording 2024-04-29 at 9 23 23 PM](https://github.com/deb-sahu/top-snackbar/assets/117360930/0de48885-8669-4e28-8ea6-42dbba35d1d2)
-
+<img src="https://github.com/deb-sahu/top-snackbar/assets/117360930/20472d5f-7eb0-43d5-a714-91888b8925e2" width="300">
 
 ## Usage
 
