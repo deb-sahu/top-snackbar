@@ -1,3 +1,7 @@
+## 0.0.6
+* Adjusted demo gif size
+* Minor code refactoring
+
 ## 0.0.5
 * Modified snackbar styles
 * Added demo gif 
