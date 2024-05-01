@@ -7,9 +7,7 @@
 
 ## Demo
 
-![2](https://github.com/deb-sahu/top-snackbar/assets/117360930/89ada1ca-4f5d-4a54-9139-84c0d752f831)
-
-<img src="https://github.com/deb-sahu/top-snackbar/assets/117360930/20472d5f-7eb0-43d5-a714-91888b8925e2" width="300">
+<img src="https://github.com/deb-sahu/top-snackbar/assets/117360930/89ada1ca-4f5d-4a54-9139-84c0d752f831" width="250">
 
 ## Usage
 
